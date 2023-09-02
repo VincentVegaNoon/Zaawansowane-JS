@@ -4,43 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <nav class="menu menu--vertical">
-      <div class="menu__logo">
-        <img class="menu__logo-img" src="" alt="" /><span
-          class="menu__logo-name"
-          >Cube Ltd.</span
-        >
+  <body class="page">
+    <header class="banner page__header">
+      <h1 class="banner__title banner__title--big">Slogan duzy</h1>
+      <h2 class="banner__title banner__title--medium">Slogan maly</h2>
+      <button class="button banner__btn"></button>
+    </header>
+    <nav class="menu page__nav">
+      <div class="logo menu__logo">
+        <img src="" alt="" class="logo__image" />
+        <span class="logo__name">Nazwa firmy</span>
       </div>
-      <ul class="menu__item-list">
-        <li class="menu__item">
-          <a class="menu__link" href=""
-            ><img class="menu__icon" src="" alt="" />link-1</a
-          >
+      <ul class="menu__list">
+        <li class="menu__item menu__item--is-open">
+          <a href="" class="menu__link">link</a>
         </li>
-        <li>
-          <a class="menu__link" href=""
-            ><img class="menu__icon" src="" alt="" />link-2</a
-          >
-        </li>
-        <li>
-          <a class="menu__link" href=""
-            ><img class="menu__icon" src="" alt="" />link-3</a
-          >
-        </li>
-        <li>
-          <a class="menu__link" href=""
-            ><img class="menu__icon" src="" alt="" />link-4</a
-          >
-        </li>
-        <li>
-          <a class="menu__link" href=""
-            ><img class="menu__icon" src="" alt="" />link-5</a
-          >
-        </li>
+        <li class="menu__item"><a href="" class="menu__link">link</a></li>
+        <li class="menu__item"><a href="" class="menu__link">link</a></li>
+        <li class="menu__item"><a href="" class="menu__link">link</a></li>
       </ul>
     </nav>
+    <section class="articles page__articles">
+      <form class="search">
+        <input class="search__input" type="text" />
+        <button class="button search__btn button--italic" type="submit">
+          Szukaj
+        </button>
+      </form>
+      <article>
+        <h1 class="article__title">Tytul artykulu</h1>
+        <div class="article__info">
+          <span class="article__publication-date">2019-07-20</span>
+          <span class="article__author">2019-07-20</span>
+        </div>
+        <p class="article__text">lorem...</p>
+        <h2 class="article__subtitle">Śródtytuł</h2>
+        <p class="article__text">lorem...</p>
+        <button class="button article__btn">Czytaj wiecej</button>
+      </article>
+      <article>
+        <h1 class="article__title">Tytul artykulu</h1>
+        <div class="article__info">
+          <span class="article__publication-date">2019-07-20</span>
+          <span class="article__author">2019-07-20</span>
+        </div>
+        <p class="article__text">lorem...</p>
+        <h2 class="article__subtitle">Śródtytuł</h2>
+        <p class="article__text">lorem...</p>
+        <button class="button article__btn">Czytaj wiecej</button>
+      </article>
+      <article>
+        <h1 class="article__title">Tytul artykulu</h1>
+        <div class="article__info">
+          <span class="article__publication-date">2019-07-20</span>
+          <span class="article__author">2019-07-20</span>
+        </div>
+        <p class="article__text">lorem...</p>
+        <h2 class="article__subtitle">Śródtytuł</h2>
+        <p class="article__text">lorem...</p>
+        <button class="button article__btn">Czytaj wiecej</button>
+      </article>
+    </section>
+    <footer class="footer page__footer">
+      <p class="footer__copyright-info">zastrzezone</p>
+      <address class="footer__adress">Adres</address>
+    </footer>
   </body>
 </html>
