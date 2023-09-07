@@ -38,6 +38,19 @@ body {
   flex-basis: 60%;
   cursor: pointer;
 }
+.result {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.result__number-info {
+  grid-column: 1/4;
+  text-align: center;
+}
+.result__element-description {
+  border: 2px solid red;
+  padding: 10px;
+}
 .result,
 .content,
 .footer {
@@ -46,7 +59,8 @@ body {
 }
 
 .content {
-  margin: 10px 0;
+  margin-top: 10px 0;
+  margin-bottom: 10px;
   box-shadow: 0 0 2px 1px #ddd;
 }
 
