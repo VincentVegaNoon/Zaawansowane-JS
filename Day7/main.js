@@ -23,10 +23,13 @@ const getUsers = (e) => {
 const showUsers = (users) => {
   const resultArea = document.querySelector(".user-list");
   users.forEach((user) => {
+    console.log(user);
     const item = document.createElement("div");
     item.className = "user";
-    item.innerHTML = `<div class="user__name"><div>
-    <img class="user__image" src=>`;
+    item.innerHTML = `<div class="user__name">${user.name.title} ${user.name.first} ${user.name.last}</div>
+    <img class="user__image" src=${user.picture.medium}>`;
+
+    resultArea.appendChild(item);
   });
 };
 document.querySelector(".generator").addEventListener("submit", getUsers);
