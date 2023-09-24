@@ -8,7 +8,7 @@ module.exports = {
     main: "./src/index.js",
   },
   output: {
-    filename: "[name]-[contenthash:6].js",
+    filename: "js/[name].js",
     path: path.resolve(__dirname, "../", "build"),
   },
   devServer: {
@@ -22,13 +22,25 @@ module.exports = {
         test: /\.txt$/,
         use: "raw-loader",
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(sass|scss)$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(jpg|png|svg|gif|jpeg)$/,
+        use: "file-loader",
+      },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
       title: "nowa aplikacja",
-      template: "src/template.html",
+      template: "src/templates/template.html",
     }),
   ],
 };
